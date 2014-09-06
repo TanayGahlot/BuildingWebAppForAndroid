@@ -1,0 +1,135 @@
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+	.flip-container:hover .flipper,  
+  .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 427px;
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+}
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+
+.nav-button{
+	font-size: 3vh;
+	vertical-align: middle;
+}
+
+.marquee{
+    background: -webkit-linear-gradient(left, rgba(255,0,0,1) , rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(255,0,0,1), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(255,0,0,1), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(255,0,0,1) , rgba(255,255,255,0)); /* Standard syntax (must be last) */
+}
+
+div.full-vp{
+	height: 100vh;
+}
+
+div.glow{
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+	background: -webkit-linear-gradient(left, rgba(255,0,0,1) , rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(255,0,0,1), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(255,0,0,1), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(255,0,0,1) , rgba(255,255,255,0)); /* Standard syntax (must be last) */
+    padding: 2vh;
+    text-align: center;
+    border-radius: 12px;
+    margin: 10px
+}
+
+h2{
+	text-align: center;
+	font-weight: bold;
+	padding: 5vh 0vh;
+}
+
+div.info-box{
+	border-width: 1px;
+	border-color: while;
+	border-style: solid;
+	border-radius: 6px;
+	background-image: url("../img/background4.jpg");
+	margin: 10px;
+	padding: 10px 30px;
+}
+
+div.contact-box{
+	text-align: center;
+	color: white;
+	border-width: 1px;
+	border-color: while;
+	border-style: solid;
+	border-radius: 6px;
+	background-color: black;
+	margin: 10px;
+	padding: 30px 30px;
+}
+
+div.divider{
+	background: -webkit-linear-gradient(left, rgba(255,0,0,1) , rgba(0,255,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(255,0,0,1), rgba(0,255,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(255,0,0,1), rgba(0,255,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(255,0,0,1) , rgba(0,255,0,1)); /* Standard syntax (must be last) */
+    padding: 3px 0px;
+}
+
+div.footer{
+	background: -webkit-linear-gradient(left, rgba(0,0,0,1) , rgba(50,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(0,0,0,1), rgba(50,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(0,0,0,1), rgba(50,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(0,0,0,1) , rgba(50,0,0,1)); /* Standard syntax (must be last) */
+    color: white;
+    padding: 2vh;
+    text-align: center
+}
+
